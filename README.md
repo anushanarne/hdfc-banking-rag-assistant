@@ -229,8 +229,6 @@ The following screenshots show the deployed application's interface and represen
 | ![Customer database retrieval](Screenshots/03-customer-database-retrieval.png) | Customer-specific database retrieval |
 | ![Abstention example](Screenshots/04-abstention.png) | Handling a question that cannot be answered reliably from available information |
 
-
-
 ## 9. Evaluation and Reliability
 
 The repository's inspected evaluation artifacts report a 29-question test sample for the `BAAI/bge-small-en-v1.5` retrieval configuration.
