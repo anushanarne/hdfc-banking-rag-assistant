@@ -209,7 +209,7 @@ The model inference service is separate from the Render frontend and backend. It
 | Retrieval | BM25 keyword retrieval, vector retrieval, Reciprocal Rank Fusion |
 | Deployment | Render, Google Colab GPU, ngrok |
 
-## 9. Evaluation and Reliability
+## 8. Evaluation and Reliability
 
 The repository's inspected evaluation artifacts report a 29-question test sample for the `BAAI/bge-small-en-v1.5` retrieval configuration.
 
@@ -237,7 +237,7 @@ The retrieval evaluation provides an initial indication of whether relevant know
 - The separately hosted model inference service depends on the Colab runtime and ngrok tunnel.
 - End-to-end answer quality and deployment reliability require continued testing across more use cases.
 
-## 10. Project Structure
+## 9. Project Structure
 
 The following tree summarizes the main application components.
 
@@ -266,7 +266,7 @@ hdfc-banking-ai/
 └── architecture.mmd
 ```
 
-## 11. Local Setup
+## 10. Local Setup
 
 ### Prerequisites
 - Python version supported by the project's dependencies.
@@ -332,7 +332,7 @@ http://127.0.0.1:8000
 
 The FastAPI application may serve the frontend static files in the local setup, while the deployed frontend is hosted as a separate Render service. Follow the actual deployment configuration when testing the live services.
 
-## 12. API Overview
+## 11. API Overview
 
 The backend defines the following route groups:
 
@@ -346,7 +346,7 @@ The backend defines the following route groups:
 
 Interactive API documentation is available at `/docs` when the backend is running, if enabled in the application configuration.
 
-## 13. Security and Responsible Use
+## 12. Security and Responsible Use
 
 - Customer-specific queries are tied to the authenticated user identity in the backend.
 - Administrative endpoints use role-based authorization.
@@ -356,7 +356,7 @@ Interactive API documentation is available at `/docs` when the backend is runnin
 - Use only demonstration accounts and non-sensitive sample data in recordings and public demonstrations.
 - This project is for academic demonstration and testing. It must not be used to make real financial decisions or process real customer banking activity.
 
-## 14. Future Improvements
+## 13. Future Improvements
 
 - Improve RAG retrieval quality and expand the independently reviewed evaluation set.
 - Strengthen personal-data and unsupported-query abstention tests.
@@ -365,7 +365,7 @@ Interactive API documentation is available at `/docs` when the backend is runnin
 - Add source-level traceability and freshness checks for the knowledge base.
 - Record latency and operational cost measurements across representative workflows.
 
-## 15. Demonstration Video
+## 14. Demonstration Video
 
 **Demonstration video:** To be added.
 
