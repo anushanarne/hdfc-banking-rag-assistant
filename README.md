@@ -209,26 +209,6 @@ The model inference service is separate from the Render frontend and backend. It
 | Retrieval | BM25 keyword retrieval, vector retrieval, Reciprocal Rank Fusion |
 | Deployment | Render, Google Colab GPU, ngrok |
 
-## 8. Screenshots
-
-The following screenshots show the deployed application's interface and representative chatbot workflows.
-
-### Application interface
-
-| Screenshot | Description |
-|---|---|
-| ![Home page](Screenshots/home-page.png) | Home page and application entry point |
-| ![Dashboard](Screenshots/dashboard.png) | Banking dashboard interface |
-
-### AI assistant capabilities
-
-| Screenshot | Description |
-|---|---|
-| ![General banking knowledge](Screenshots/01-general-banking-knowledge.png) | General banking question and answer |
-| ![RAG document retrieval](Screenshots/02-rag-document-retrieval.png) | Knowledge-base retrieval demonstration |
-| ![Customer database retrieval](Screenshots/03-customer-database-retrieval.png) | Customer-specific database retrieval |
-| ![Abstention example](Screenshots/04-abstention.png) | Handling a question that cannot be answered reliably from available information |
-
 ## 9. Evaluation and Reliability
 
 The repository's inspected evaluation artifacts report a 29-question test sample for the `BAAI/bge-small-en-v1.5` retrieval configuration.
