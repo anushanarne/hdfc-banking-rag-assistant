@@ -2,7 +2,6 @@
 
 An AI-powered banking portal combining a fine-tuned language model, retrieval-augmented generation (RAG), and authenticated database queries for banking conversations and customer self-service workflows.
 
-> **Academic demonstration:** This is an independent academic project, not an official HDFC Bank product. Its knowledge-base records are demonstration-labelled and must not be treated as verified or current HDFC Bank policy.
 
 ## 1. Business Problem and Product Goal
 
@@ -392,10 +391,6 @@ Interactive API documentation is available at `/docs` when the backend is runnin
 - Expand automated end-to-end testing across authentication, routing, retrieval and answer generation.
 - Add source-level traceability and freshness checks for the knowledge base.
 - Record latency and operational cost measurements across representative workflows.
-
-## 15. Demonstration Video
-
-**Demonstration video:** To be added.
 
 ## Acknowledgements
 
