@@ -224,18 +224,17 @@ The following screenshots show the deployed application's interface and represen
 
 | Screenshot | Description |
 |---|---|
-| ![Home page](Screenshots/home-page.png) | Home page and application entry point |
-| ![Dashboard](Screenshots/dashboard.png) | Banking dashboard interface |
+| ![Home page](screenshots/home-page.png) | Home page and application entry point |
+| ![Dashboard](screenshots/dashboard.png) | Banking dashboard interface |
 
 ### AI assistant capabilities
 
 | Screenshot | Description |
 |---|---|
-| ![General banking knowledge](Screenshots/01-general-banking-knowledge.png) | General banking question and answer |
-| ![RAG document retrieval](Screenshots/02-rag-document-retrieval.png) | Knowledge-base retrieval demonstration |
-| ![Customer database retrieval](Screenshots/03-customer-database-retrieval.png) | Customer-specific database retrieval |
-| ![Abstention example](Screenshots/04-abstention.png) | Handling a question that cannot be answered reliably from available information |
-
+| ![General banking knowledge](screenshots/01-general-banking-knowledge.png) | General banking question and answer |
+| ![RAG document retrieval](screenshots/02-rag-document-retrieval.png) | Knowledge-base retrieval demonstration |
+| ![Customer database retrieval](screenshots/03-customer-database-retrieval.png) | Customer-specific database retrieval |
+| ![Abstention example](screenshots/04-abstention.png) | Handling a question that cannot be answered reliably from available information |
 
 
 ## 9. Evaluation and Reliability
