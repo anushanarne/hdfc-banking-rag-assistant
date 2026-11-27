@@ -187,8 +187,8 @@ flowchart TB
     NG --> COLAB
 ```
 
-- **Live frontend:** https://hdfc-banking-ai.onrender.com
-- **Backend service:** https://hdfc-banking-ai-backend.onrender.com
+- **Live frontend:** https://hdfc-banking-rag-assistant.onrender.com
+- **Backend service:** https://hdfc-banking-ai-backend-ero5.onrender.com
 - **Model inference:** Google Colab GPU service exposed through ngrok.
 - **Configuration:** The backend uses `MODEL_API_URL` and `MODEL_API_TOKEN` for the model API connection.
 
@@ -209,7 +209,29 @@ The model inference service is separate from the Render frontend and backend. It
 | Retrieval | BM25 keyword retrieval, vector retrieval, Reciprocal Rank Fusion |
 | Deployment | Render, Google Colab GPU, ngrok |
 
-## 8. Evaluation and Reliability
+## 8. Screenshots
+
+The following screenshots show the deployed application's interface and representative chatbot workflows.
+
+### Application interface
+
+| Screenshot | Description |
+|---|---|
+| ![Home page](Screenshots/home-page.png) | Home page and application entry point |
+| ![Dashboard](Screenshots/dashboard.png) | Banking dashboard interface |
+
+### AI assistant capabilities
+
+| Screenshot | Description |
+|---|---|
+| ![General banking knowledge](Screenshots/01-general-banking-knowledge.png) | General banking question and answer |
+| ![RAG document retrieval](Screenshots/02-rag-document-retrieval.png) | Knowledge-base retrieval demonstration |
+| ![Customer database retrieval](Screenshots/03-customer-database-retrieval.png) | Customer-specific database retrieval |
+| ![Abstention example](Screenshots/04-abstention.png) | Handling a question that cannot be answered reliably from available information |
+
+
+
+## 9. Evaluation and Reliability
 
 The repository's inspected evaluation artifacts report a 29-question test sample for the `BAAI/bge-small-en-v1.5` retrieval configuration.
 
@@ -237,7 +259,7 @@ The retrieval evaluation provides an initial indication of whether relevant know
 - The separately hosted model inference service depends on the Colab runtime and ngrok tunnel.
 - End-to-end answer quality and deployment reliability require continued testing across more use cases.
 
-## 9. Project Structure
+## 10. Project Structure
 
 The following tree summarizes the main application components.
 
@@ -266,7 +288,7 @@ hdfc-banking-ai/
 └── architecture.mmd
 ```
 
-## 10. Local Setup
+## 11. Local Setup
 
 ### Prerequisites
 - Python version supported by the project's dependencies.
@@ -332,7 +354,7 @@ http://127.0.0.1:8000
 
 The FastAPI application may serve the frontend static files in the local setup, while the deployed frontend is hosted as a separate Render service. Follow the actual deployment configuration when testing the live services.
 
-## 11. API Overview
+## 12. API Overview
 
 The backend defines the following route groups:
 
@@ -346,7 +368,7 @@ The backend defines the following route groups:
 
 Interactive API documentation is available at `/docs` when the backend is running, if enabled in the application configuration.
 
-## 12. Security and Responsible Use
+## 13. Security and Responsible Use
 
 - Customer-specific queries are tied to the authenticated user identity in the backend.
 - Administrative endpoints use role-based authorization.
@@ -356,7 +378,7 @@ Interactive API documentation is available at `/docs` when the backend is runnin
 - Use only demonstration accounts and non-sensitive sample data in recordings and public demonstrations.
 - This project is for academic demonstration and testing. It must not be used to make real financial decisions or process real customer banking activity.
 
-## 13. Future Improvements
+## 14. Future Improvements
 
 - Improve RAG retrieval quality and expand the independently reviewed evaluation set.
 - Strengthen personal-data and unsupported-query abstention tests.
@@ -365,7 +387,7 @@ Interactive API documentation is available at `/docs` when the backend is runnin
 - Add source-level traceability and freshness checks for the knowledge base.
 - Record latency and operational cost measurements across representative workflows.
 
-## 14. Demonstration Video
+## 15. Demonstration Video
 
 **Demonstration video:** To be added.
 
