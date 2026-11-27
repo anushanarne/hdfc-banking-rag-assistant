@@ -191,7 +191,7 @@ flowchart TB
 - **Backend service:** https://hdfc-banking-ai-backend-ero5.onrender.com
 - **Model inference:** Google Colab GPU service exposed through ngrok.
 - **Configuration:** The backend uses `MODEL_API_URL` and `MODEL_API_TOKEN` for the model API connection.
-
+**Status:** Backend is deployed. Chatbot integration with the Qwen model API is still being tested.
 The model inference service is separate from the Render frontend and backend. Its availability depends on the Colab runtime and ngrok tunnel being active. If the tunnel URL or token changes, update the corresponding backend environment variables securely.
 
 ## 7. Technology Stack
