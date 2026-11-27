@@ -2,6 +2,7 @@
 An AI-powered banking portal combining a fine-tuned language model, retrieval-augmented generation (RAG), and authenticated database queries for banking conversations and customer self-service workflows.
 
 ##### Demonstration Video: https://drive.google.com/file/d/1v2xEbTUk8hvoXb2JbXrBjJ-GCQ6uEYkE/view?usp=sharing
+##### GitHub Repository: 
 
 ## 1. Business Problem and Product Goal
 
